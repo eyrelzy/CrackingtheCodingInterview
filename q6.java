@@ -49,7 +49,7 @@ Inorder to do that we just need to put the fast node back to head and go one ste
 		Node head1=getCircularHead(n);
 		Node head2=findCircleStart(n);
 	}
-	//O(n^2) O(1)
+	//method 1: time O(n^2) space O(1)
 	public static Node getCircularHead(Node n)
 	{
 		Node f=n;
@@ -74,7 +74,7 @@ Inorder to do that we just need to put the fast node back to head and go one ste
 			scnt=1;
 		}
 	}
-	//method in book o(n) o(1)
+	//method 2: in book  time o(n) space o(1)
 	public static Node findCircleStart(Node n)
 	{
 		Node fast=n;
